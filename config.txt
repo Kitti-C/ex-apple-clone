@@ -1,0 +1,50 @@
+⚡create project
+    • yarn create next-app --typescript
+
+⚡eslint
+    • npx eslint --init
+    • npx install-peerdeps --dev eslint-config-airbnb
+      - extends : ["airbnb", "airbnb/hooks"] to your .eslintrc
+    • yarn add -D eslint-config-airbnb-typescript
+      - extends : ["airbnb-typescript"] to your .eslintrc
+      - parserOptions: { project: ['./tsconfig.json'] } to your .eslintrc
+      - include: [".eslintrc.js"] to your tsconfig.json
+    • off rules
+      - rules: {
+        'react/react-in-jsx-scope': 0,
+        '@typescript-eslint/comma-dangle': 0,
+        '@typescript-eslint/semi': 0,
+        'import/no-extraneous-dependencies': 0,
+        'import/extensions': 0,
+        'tailwindcss/no-custom-classname': 0,
+        'prettier/prettier': ['error', {endOfLine: 'auto'}],
+        }  
+
+⚡prettier
+    • yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+    • create file .prettierrc.js
+      - module.exports = {
+          trailingComma: 'es5',
+          tabWidth: 2,
+          semi: false,
+          singleQuote: true,
+        }
+      - plugins : ["prettier"] to your .eslintrc
+      - extends : ["plugin:prettier/recommended"] to your .eslintrc
+
+⚡tailwindcss
+    • yarn add -D eslint-plugin-tailwindcss
+	- plugins : ["tailwindcss"] to your .eslintrc
+      - extends : ["plugin:tailwindcss/recommended"] to your .eslintrc
+      - include : ["*.config.js", "*.config.ts"] to your tsconfig.json
+    • yarn add -D tailwindcss postcss autoprefixer
+    • npx tailwindcss init -p
+      - content: ['./pages/**/*.{js,ts,jsx,tsx}',
+                  './components/**/*.{js,ts,jsx,tsx}'
+                 ] to your tailwind.config.js              
+    • yarn add -D flowbite flowbite-react
+      - content: ['node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'] to your tailwind.config.js
+      - plugins: [require('flowbite/plugin')] to your tailwind.config.js
+
+⚡check status
+    • npx eslint . --ext .js,.jsx,.ts,.tsx
