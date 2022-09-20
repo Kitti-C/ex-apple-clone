@@ -48,3 +48,6 @@
 
 ⚡check status
     • npx eslint . --ext .js,.jsx,.ts,.tsx
+
+⚡lib
+    • yarn add -D @heroicons/react

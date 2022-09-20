@@ -27,6 +27,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
     'tailwindcss/no-custom-classname': 0,
+    'react/jsx-curly-brace-presence': 0,
     'prettier/prettier': [
       'error',
       {
