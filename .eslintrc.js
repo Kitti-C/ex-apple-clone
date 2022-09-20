@@ -27,8 +27,10 @@ module.exports = {
     'react/require-default-props': 0,
     '@typescript-eslint/comma-dangle': 0,
     '@typescript-eslint/semi': 0,
+    '@typescript-eslint/no-explicit-any': 'warn',
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
+    'no-console': 0,
     'tailwindcss/no-custom-classname': 0,
     'prettier/prettier': [
       'error',

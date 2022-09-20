@@ -51,3 +51,6 @@
 
 ⚡lib
     • yarn add -D @heroicons/react
+    • yarn add -D @headlessui/react@latest
+    • yarn add -D axios
+    • yarn -D react-icons

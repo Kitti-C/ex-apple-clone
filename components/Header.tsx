@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-[#e7ecee] p-4">
       <div className="item-center flex justify-center md:w-1/5">
-        <Link href="\">
+        <Link href="/">
           <div className="relative h-10 w-5 cursor-pointer opacity-75 transition hover:opacity-100">
             <Image
               src={`https://rb.gy/vsvv2o`}
