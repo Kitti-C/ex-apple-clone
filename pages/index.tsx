@@ -2,6 +2,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '@/components/Header'
+import Landing from '@/components/Landing'
 
 const Home: NextPage = () => {
   return (
@@ -16,8 +17,8 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <main>
-        <h1 className="font-semibold ">Lets build Apple Redesign</h1>
+      <main className="relative h-[200vh] bg-[#e7ecee]">
+        <Landing />
       </main>
     </div>
   )

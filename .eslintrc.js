@@ -22,12 +22,14 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss'],
   rules: {
     'react/react-in-jsx-scope': 0,
+    'react/jsx-curly-brace-presence': 0,
+    'react/no-unused-prop-types': 0,
+    'react/require-default-props': 0,
     '@typescript-eslint/comma-dangle': 0,
     '@typescript-eslint/semi': 0,
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
     'tailwindcss/no-custom-classname': 0,
-    'react/jsx-curly-brace-presence': 0,
     'prettier/prettier': [
       'error',
       {
